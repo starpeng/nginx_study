@@ -29,7 +29,7 @@ docker build --rm \
 
 Run
 ```shell
-docker run --name ${IMAGENAME} --rm --detach --publish 8080:80  ${DOCKER_REGISTRY:+${DOCKER_REGISTRY}/}${DOCKER_CONTEXT_PATH:+${DOCKER_CONTEXT_PATH}/}${IMAGENAME}:${VERSION}
+docker run --name ${IMAGENAME} --rm --detach --publish 80:80  ${DOCKER_REGISTRY:+${DOCKER_REGISTRY}/}${DOCKER_CONTEXT_PATH:+${DOCKER_CONTEXT_PATH}/}${IMAGENAME}:${VERSION}
 ```
 
 Clean
