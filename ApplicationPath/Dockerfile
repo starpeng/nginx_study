@@ -18,5 +18,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.vendor=starpeng \
     org.label-schema.version=$VERSION \
     org.label-schema.docker.schema-version="1.0" \
-    org.label-schema.docker.cmd=docker="run -it -p 80:80  ${DOCKER_REGISTRY:+${DOCKER_REGISTRY}/}${DOCKER_CONTEXT_PATH:+${DOCKER_CONTEXT_PATH}/}${IMAGENAME}:${VERSION}" \
+    org.label-schema.docker.cmd=docker="run -it -p 8080:8080  ${DOCKER_REGISTRY:+${DOCKER_REGISTRY}/}${DOCKER_CONTEXT_PATH:+${DOCKER_CONTEXT_PATH}/}${IMAGENAME}:${VERSION}" \
     project=nginx_study
+
+EXPOSE 8080
